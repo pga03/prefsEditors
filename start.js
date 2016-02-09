@@ -13,7 +13,7 @@ https://github.com/GPII/prefsEditors/LICENSE.txt
 
 var kettlePath = process.argv[2] || __dirname + "/node_modules/kettle/node_modules/express/node_modules/connect/";
 var host = process.argv[3] || "localhost";
-var port = process.argv[4] || 5559;
+var port = process.argv[4] || process.env.PORT || 5559;
 
 /*
  * Example starting PMT: node start.js ./node_modules/kettle/node_modules/express/node_modules/connect localhost 5559
